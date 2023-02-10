@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>DISPLAY_ACCESS</title>
+</head>
+<body>
+    <center>
+        <h1>ACCESS RECORDS</h1>
+    <table border="3px">
+    <tr>
+        <th>name</th>
+        <th>date</th>
+    </tr>
+    {% for a in access %}
+    <tr>
+       
+        <td>{{ a.name }}</td>
+        <td>{{a.date}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    </center>
+</body>
+</html>

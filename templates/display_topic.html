@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>DISPLAY_TOPIC</title>
+</head>
+<body>
+    <center>
+        <h1>TOPIC</h1>
+    
+    <table border="3px">
+        <tr>
+            <th>topic_name</th>
+        </tr>
+        {% for t in topics %}
+        <tr>
+            <td>{{t.topic_name}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
